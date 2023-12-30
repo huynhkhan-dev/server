@@ -269,8 +269,13 @@ public class NpcFactory {
                                     + "\n|-1|- ĐỆ ANIME : 100K (80% CS KHI HOP THE PORATA C2)" +
                                     "\n|-1|- ĐỆ GÁI XINH: 120K (90% CS KHI HOP THE PORATA C2)" +
                                     "\n|-1|- ĐỆ VEGETA GIÁO SƯ: 130K(100% CS KHI HOP THE PORATA C2)" +
+                                    "\n|-1|- ĐỆ SQUID GAME: 130K(100% CS KHI HOP THE PORATA C2)" +
+                                     "\n|-1|- ĐỆ QUY LÃO: 130K(100% CS KHI HOP THE PORATA C2)" +
+                                    "\n|-1|- ĐỆ Đường Tăng: 130K(100% CS KHI HOP THE PORATA C2)" +
+                                    "\n|-1|- ĐỆ ANDROID 18: 130K(100% CS KHI HOP THE PORATA C2)" +
                                     "\n\n|7| SỐ TIỀN BẠN ĐANG CÓ: " + Util.format(player.getSession().vnd),
-                            "Đệ Vegeta", "Đệ Picolo", "Đệ Anime","Đệ Gái xinh", "Đệ Vegeta Giáo sư", "Tù chối");
+                            "Đệ Vegeta", "Đệ Picolo", "Đệ Anime","Đệ Gái xinh", "Đệ Vegeta Giáo sư", "Đệ Squid Game", "Đệ Quy lão", "Đệ Đường tăng"
+                                    , "Đệ Số 18", "Tù chối");
                 }
             }
 
@@ -361,6 +366,78 @@ public class NpcFactory {
                                     if(player.pet != null){
                                         int gender = player.pet.gender;
                                         PetService.gI().ChangePet(player, gender, 8);
+                                        this.npcChat(player, "Chúc mừng đã đổi đệ");
+                                        PlayerDAO.subvnd(player, 130000);
+                                    } else {
+                                        Service.getInstance().sendThongBao(player, "Không thể thực hiện");
+                                    }
+                                }else {
+                                    Service.getInstance().sendThongBao(player, "Vui lòng tháo hết đồ đệ tử");
+                                }
+                                break;
+                            case 5:
+                                if(player.getSession().vnd < 130000){
+                                    this.npcChat(player, "Nghèo mà bầy đặt");
+                                    return;
+                                }
+                                if (InventoryServiceNew.gI().getCountEmptyBody(player.pet) == 8){
+                                    if(player.pet != null){
+                                        int gender = player.pet.gender;
+                                        PetService.gI().ChangePet(player, gender, 9);
+                                        this.npcChat(player, "Chúc mừng đã đổi đệ");
+                                        PlayerDAO.subvnd(player, 130000);
+                                    } else {
+                                        Service.getInstance().sendThongBao(player, "Không thể thực hiện");
+                                    }
+                                }else {
+                                    Service.getInstance().sendThongBao(player, "Vui lòng tháo hết đồ đệ tử");
+                                }
+                                break;
+                            case 6:
+                                if(player.getSession().vnd < 130000){
+                                    this.npcChat(player, "Nghèo mà bầy đặt");
+                                    return;
+                                }
+                                if (InventoryServiceNew.gI().getCountEmptyBody(player.pet) == 8){
+                                    if(player.pet != null){
+                                        int gender = player.pet.gender;
+                                        PetService.gI().ChangePet(player, gender, 10);
+                                        this.npcChat(player, "Chúc mừng đã đổi đệ");
+                                        PlayerDAO.subvnd(player, 130000);
+                                    } else {
+                                        Service.getInstance().sendThongBao(player, "Không thể thực hiện");
+                                    }
+                                }else {
+                                    Service.getInstance().sendThongBao(player, "Vui lòng tháo hết đồ đệ tử");
+                                }
+                                break;
+                            case 7:
+                                if(player.getSession().vnd < 130000){
+                                    this.npcChat(player, "Nghèo mà bầy đặt");
+                                    return;
+                                }
+                                if (InventoryServiceNew.gI().getCountEmptyBody(player.pet) == 8){
+                                    if(player.pet != null){
+                                        int gender = player.pet.gender;
+                                        PetService.gI().ChangePet(player, gender, 11);
+                                        this.npcChat(player, "Chúc mừng đã đổi đệ");
+                                        PlayerDAO.subvnd(player, 130000);
+                                    } else {
+                                        Service.getInstance().sendThongBao(player, "Không thể thực hiện");
+                                    }
+                                }else {
+                                    Service.getInstance().sendThongBao(player, "Vui lòng tháo hết đồ đệ tử");
+                                }
+                                break;
+                            case 8:
+                                if(player.getSession().vnd < 130000){
+                                    this.npcChat(player, "Nghèo mà bầy đặt");
+                                    return;
+                                }
+                                if (InventoryServiceNew.gI().getCountEmptyBody(player.pet) == 8){
+                                    if(player.pet != null){
+                                        int gender = player.pet.gender;
+                                        PetService.gI().ChangePet(player, gender, 12);
                                         this.npcChat(player, "Chúc mừng đã đổi đệ");
                                         PlayerDAO.subvnd(player, 130000);
                                     } else {

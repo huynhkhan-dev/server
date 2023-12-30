@@ -365,6 +365,18 @@ public class PetService {
             case 8:
                 PropertiNewPet(player, "Vegeta Giáo sư", type, gender);
                 break;
+            case 9:
+                PropertiNewPet(player, "Squid Game", type, gender);
+                break;
+            case 10:
+                PropertiNewPet(player, "Già dê", type, gender);
+                break;
+            case 11:
+                PropertiNewPet(player, "Khầy chùa", type, gender);
+                break;
+            case 12:
+                PropertiNewPet(player, "Android 18", type, gender);
+                break;
         }
 
     }
