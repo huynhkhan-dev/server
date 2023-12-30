@@ -365,6 +365,9 @@ public class PetService {
             case 8:
                 PropertiNewPet(player, "Vegeta Giáo sư", type, gender);
                 break;
+            case 9:
+                PropertiNewPet(player, "Squid Game", type, gender);
+                break;
         }
 
     }
