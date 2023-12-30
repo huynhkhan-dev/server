@@ -608,6 +608,8 @@ public class Pet extends Player {
             return 934; // pet squid game
         }else if (this.typePet == 10) {
             return 554; // pet quy lao
+        }else if (this.typePet == 11) {
+            return 467; // pet Tam tang
         }else {
             return PET_ID[3][this.gender];
         }
@@ -639,6 +641,8 @@ public class Pet extends Player {
             return 934;
         }else if (this.typePet == 10) {
             return 554;
+        }else if (this.typePet == 11) {
+            return 467;
         } else if (effectSkill.isBinh) {
             return 1321;
         } else if (inventory.itemsBody.get(5).isNotNullItem()) {
@@ -680,6 +684,8 @@ public class Pet extends Player {
             return 935;
         }else if (this.typePet == 10 && !this.isTransform) {
             return 555;
+        }else if (this.typePet == 11 && !this.isTransform) {
+            return 468;
         }else if (effectSkill.isBinh) {
             return 1322;
         } else if (inventory.itemsBody.get(5).isNotNullItem()) {
@@ -724,6 +730,8 @@ public class Pet extends Player {
             return 936;
         }else if (this.typePet == 10 && !this.isTransform) {
             return 556;
+        }else if (this.typePet == 11 && !this.isTransform) {
+            return 469;
         }else if (effectSkill.isBinh) {
             return 1323;
         }else if (inventory.itemsBody.get(5).isNotNullItem()) {
