@@ -606,6 +606,8 @@ public class Pet extends Player {
             return 858; // pet vegeta triet hoc
         }else if (this.typePet == 9) {
             return 934; // pet squid game
+        }else if (this.typePet == 10) {
+            return 554; // pet quy lao
         }else {
             return PET_ID[3][this.gender];
         }
@@ -635,6 +637,8 @@ public class Pet extends Player {
             return 858;
         }else if (this.typePet == 9) {
             return 934;
+        }else if (this.typePet == 10) {
+            return 554;
         } else if (effectSkill.isBinh) {
             return 1321;
         } else if (inventory.itemsBody.get(5).isNotNullItem()) {
@@ -672,9 +676,11 @@ public class Pet extends Player {
             return 1356;
         } else if (this.typePet == 8 && !this.isTransform) {
             return 859;
-        } else if (this.typePet == 9 && !this.isTransform) {
+        }else if (this.typePet == 9 && !this.isTransform) {
             return 935;
-        } else if (effectSkill.isBinh) {
+        }else if (this.typePet == 10 && !this.isTransform) {
+            return 555;
+        }else if (effectSkill.isBinh) {
             return 1322;
         } else if (inventory.itemsBody.get(5).isNotNullItem()) {
             int body = inventory.itemsBody.get(5).template.body;
@@ -714,11 +720,13 @@ public class Pet extends Player {
             return 1359;
         }  else if (this.typePet == 8 && !this.isTransform) {
             return 860;
-        } else if (this.typePet == 9 && !this.isTransform) {
+        }else if (this.typePet == 9 && !this.isTransform) {
             return 936;
-        }  else if (effectSkill.isBinh) {
+        }else if (this.typePet == 10 && !this.isTransform) {
+            return 556;
+        }else if (effectSkill.isBinh) {
             return 1323;
-        } else if (inventory.itemsBody.get(5).isNotNullItem()) {
+        }else if (inventory.itemsBody.get(5).isNotNullItem()) {
             int leg = inventory.itemsBody.get(5).template.leg;
             if (leg != -1) {
                 return (short) leg;
