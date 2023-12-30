@@ -317,127 +317,53 @@ public class PetService {
         petData[4] = Util.nextInt(2, 5); //crit
         return petData;
     }
+     
+    private void PropertiNewPet(Player player,String name, int type, byte... gender){
+        int[] data = getDataPetPicolo();;
+        Pet pet = new Pet(player);;
+
+        pet.name = "$" + name;
+        pet.gender = (gender != null && gender.length != 0) ? gender[0] : (byte) Util.nextInt(0, 2);
+        pet.id = -player.id;
+        pet.nPoint.power = 1500000;
+
+        pet.typePet = (byte) type;
+
+        pet.nPoint.stamina = 1000;
+        pet.nPoint.maxStamina = 1000;
+        pet.nPoint.hpg = data[0];
+        pet.nPoint.mpg = data[1];
+        pet.nPoint.dameg = data[2];
+        pet.nPoint.defg = data[3];
+        pet.nPoint.critg = data[4];
+        for (int i = 0; i < 8; i++) {
+            pet.inventory.itemsBody.add(ItemService.gI().createItemNull());
+        }
+        pet.playerSkill.skills.add(SkillUtil.createSkill(Util.nextInt(0, 2) * 2, 1));
+        for (int i = 0; i < 3; i++) {
+            pet.playerSkill.skills.add(SkillUtil.createEmptySkill());
+        }
+        pet.nPoint.setFullHpMp();
+        player.pet = pet;
+        data = null;
+    }
 
     private void CreateNewPet(Player player,int type, byte... gender){
-        int[] data;
-        Pet pet;
         switch (type){
             case 4: // picolo
-                data = getDataPetPicolo();
-
-                pet = new Pet(player);
-                pet.name = "$" + "Picolo";
-                pet.gender = (gender != null && gender.length != 0) ? gender[0] : (byte) Util.nextInt(0, 2);
-                pet.id = -player.id;
-                pet.nPoint.power = 1500000;
-
-                pet.typePet = (byte) type;
-
-                pet.nPoint.stamina = 1000;
-                pet.nPoint.maxStamina = 1000;
-                pet.nPoint.hpg = data[0];
-                pet.nPoint.mpg = data[1];
-                pet.nPoint.dameg = data[2];
-                pet.nPoint.defg = data[3];
-                pet.nPoint.critg = data[4];
-                for (int i = 0; i < 8; i++) {
-                    pet.inventory.itemsBody.add(ItemService.gI().createItemNull());
-                }
-                pet.playerSkill.skills.add(SkillUtil.createSkill(Util.nextInt(0, 2) * 2, 1));
-                for (int i = 0; i < 3; i++) {
-                    pet.playerSkill.skills.add(SkillUtil.createEmptySkill());
-                }
-                pet.nPoint.setFullHpMp();
-                player.pet = pet;
-                data = null;
+                PropertiNewPet(player, "Picolo", type, gender);
                 break;
             case 5:
-                data = getDataPetPicolo();
-
-                pet = new Pet(player);
-                pet.name = "$" + "Anime";
-                pet.gender = (gender != null && gender.length != 0) ? gender[0] : (byte) Util.nextInt(0, 2);
-                pet.id = -player.id;
-                pet.nPoint.power = 1500000;
-
-                pet.typePet = (byte) type;
-
-                pet.nPoint.stamina = 1000;
-                pet.nPoint.maxStamina = 1000;
-                pet.nPoint.hpg = data[0];
-                pet.nPoint.mpg = data[1];
-                pet.nPoint.dameg = data[2];
-                pet.nPoint.defg = data[3];
-                pet.nPoint.critg = data[4];
-                for (int i = 0; i < 8; i++) {
-                    pet.inventory.itemsBody.add(ItemService.gI().createItemNull());
-                }
-                pet.playerSkill.skills.add(SkillUtil.createSkill(Util.nextInt(0, 2) * 2, 1));
-                for (int i = 0; i < 3; i++) {
-                    pet.playerSkill.skills.add(SkillUtil.createEmptySkill());
-                }
-                pet.nPoint.setFullHpMp();
-                player.pet = pet;
-                data = null;
+                PropertiNewPet(player, "Anime", type, gender);
                 break;
             case 6:
-                data = getDataPetPicolo();
-
-                pet = new Pet(player);
-                pet.name = "$" + "Vegeta";
-                pet.gender = (gender != null && gender.length != 0) ? gender[0] : (byte) Util.nextInt(0, 2);
-                pet.id = -player.id;
-                pet.nPoint.power = 1500000;
-
-                pet.typePet = (byte) type;
-
-                pet.nPoint.stamina = 1000;
-                pet.nPoint.maxStamina = 1000;
-                pet.nPoint.hpg = data[0];
-                pet.nPoint.mpg = data[1];
-                pet.nPoint.dameg = data[2];
-                pet.nPoint.defg = data[3];
-                pet.nPoint.critg = data[4];
-                for (int i = 0; i < 8; i++) {
-                    pet.inventory.itemsBody.add(ItemService.gI().createItemNull());
-                }
-                pet.playerSkill.skills.add(SkillUtil.createSkill(Util.nextInt(0, 2) * 2, 1));
-                for (int i = 0; i < 3; i++) {
-                    pet.playerSkill.skills.add(SkillUtil.createEmptySkill());
-                }
-                pet.nPoint.setFullHpMp();
-                player.pet = pet;
-                data = null;
+                PropertiNewPet(player, "Vegeta Hắc họa", type, gender);
                 break;
-
             case 7:
-                data = getDataPetPicolo();
-
-                pet = new Pet(player);
-                pet.name = "$" + "Gái xinh";
-                pet.gender = (gender != null && gender.length != 0) ? gender[0] : (byte) Util.nextInt(0, 2);
-                pet.id = -player.id;
-                pet.nPoint.power = 1500000;
-
-                pet.typePet = (byte) type;
-
-                pet.nPoint.stamina = 1000;
-                pet.nPoint.maxStamina = 1000;
-                pet.nPoint.hpg = data[0];
-                pet.nPoint.mpg = data[1];
-                pet.nPoint.dameg = data[2];
-                pet.nPoint.defg = data[3];
-                pet.nPoint.critg = data[4];
-                for (int i = 0; i < 8; i++) {
-                    pet.inventory.itemsBody.add(ItemService.gI().createItemNull());
-                }
-                pet.playerSkill.skills.add(SkillUtil.createSkill(Util.nextInt(0, 2) * 2, 1));
-                for (int i = 0; i < 3; i++) {
-                    pet.playerSkill.skills.add(SkillUtil.createEmptySkill());
-                }
-                pet.nPoint.setFullHpMp();
-                player.pet = pet;
-                data = null;
+                PropertiNewPet(player, "Gái xinh", type, gender);
+                break;
+            case 8:
+                PropertiNewPet(player, "Vegeta Giáo sư", type, gender);
                 break;
         }
 
