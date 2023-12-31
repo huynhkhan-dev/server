@@ -1023,7 +1023,7 @@ public class Service {
 //            String freePhysicalMemoryStr = decimalFormat.format((double) freePhysicalMemorySize / (1024 * 1024 * 1024));
             if (text.equals("menu")) {
                 int songuoi = Client.gI().getPlayers().size();
-                NpcService.gI().createMenuConMeo(player, ConstNpc.MENU_ADMIN, -1, "Quản trị admin TaBi. Số người online: " + songuoi + "\n"
+                NpcService.gI().createMenuConMeo(player, ConstNpc.MENU_ADMIN, -1, "Quản trị admin HOCK. Số người online: " + songuoi + "\n"
                         + "|7|Thread hiện tại: " + Thread.activeCount() + "\n"
                         + "|1|Sessions: " + GirlkunSessionManager.gI().getSessions().size() + "\n",
 //                                                + "\n Thread :" + Thread.activeCount()

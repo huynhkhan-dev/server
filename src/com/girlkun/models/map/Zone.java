@@ -562,7 +562,7 @@ public class Zone {
                 Service.getInstance().sendFootRv(plInfo, plReceive, (short) plInfo.inventory.itemsBody.get(11).template.id);
             }
         }
-        if (plInfo.isPl() && plInfo.name.compareTo("TABI") != 0 && plInfo.name.compareTo("TEST DAME") != 0) {
+        if (plInfo.isPl() && plInfo.name.compareTo("HOCK") != 0 && plInfo.name.compareTo("TEST DAME") != 0) {
         if (plInfo.inventory.itemsBody.get(5).isNotNullItem()) {
                 Service.getInstance().sendTitleRv(plInfo, plReceive, (short) plInfo.inventory.itemsBody.get(5).template.id);
             }

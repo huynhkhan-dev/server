@@ -979,9 +979,9 @@ public class TaskService {
                     break;
                 case ConstTask.TASK_20_6:
                     npcSay(player, ConstNpc.CUI,
-                            "Độc Quyền Bởi Nro TaBi\n"
-                            + "Độc Quyền Bởi Nro TaBi\n"
-                            + "Độc Quyền Bởi Nro TaBi");
+                            "Độc Quyền Bởi Nro HOCK\n"
+                            + "Độc Quyền Bởi Nro HOCK\n"
+                            + "Độc Quyền Bởi Nro HOCK");
                     break;
                 //--------------------------------------------------------------
                 case ConstTask.TASK_21_0:
@@ -994,16 +994,16 @@ public class TaskService {
                     break;
                 case ConstTask.TASK_21_4:
                     npcSay(player, ConstNpc.CUI,
-                            "Độc Quyền Bởi Nro TaBi\n"
-                            + "Độc Quyền Bởi Nro TaBi\n"
-                            + "Độc Quyền Bởi Nro TaBi");
+                            "Độc Quyền Bởi Nro HOCK\n"
+                            + "Độc Quyền Bởi Nro HOCK\n"
+                            + "Độc Quyền Bởi Nro HOCK");
                     break;
                 //--------------------------------------------------------------
                 case ConstTask.TASK_22_0:
                     npcSay(player, ConstNpc.BUNMA_TL,
-                          "Độc Quyền Bởi Nro TaBi\n"
-                            + "Độc Quyền Bởi Nro TaBi\n"
-                            + "Độc Quyền Bởi Nro TaBi");
+                          "Độc Quyền Bởi Nro HOCK\n"
+                            + "Độc Quyền Bởi Nro HOCK\n"
+                            + "Độc Quyền Bởi Nro HOCK");
                     break;
                 case ConstTask.TASK_22_1:
                     break;
@@ -1013,9 +1013,9 @@ public class TaskService {
                     break;
                 case ConstTask.TASK_22_4:
                     npcSay(player, ConstNpc.BUNMA_TL,
-                            "Độc Quyền Bởi Nro TaBi\n"
-                            + "Độc Quyền Bởi Nro TaBi\n"
-                            + "Độc Quyền Bởi Nro TaBi");
+                            "Độc Quyền Bởi Nro HOCK\n"
+                            + "Độc Quyền Bởi Nro HOCK\n"
+                            + "Độc Quyền Bởi Nro HOCK");
                 //--------------------------------------------------------------
                 case ConstTask.TASK_23_0:
                     break;
@@ -1027,9 +1027,9 @@ public class TaskService {
                     break;
                 case ConstTask.TASK_23_4:
                     npcSay(player, ConstNpc.BUNMA_TL,
-                          "Độc Quyền Bởi Nro TaBi\n"
-                            + "Độc Quyền Bởi Nro TaBi\n"
-                            + "Độc Quyền Bởi Nro TaBi");
+                          "Độc Quyền Bởi Nro HOCK\n"
+                            + "Độc Quyền Bởi Nro HOCK\n"
+                            + "Độc Quyền Bởi Nro HOCK");
                     break;
                 //--------------------------------------------------------------
                 case ConstTask.TASK_24_0:
@@ -1042,9 +1042,9 @@ public class TaskService {
                     break;
                 case ConstTask.TASK_24_4:
                     npcSay(player, ConstNpc.BUNMA_TL,
-                            "Độc Quyền Bởi Nro TaBi\n"
-                            + "Độc Quyền Bởi Nro TaBi\n"
-                            + "Độc Quyền Bởi Nro TaBi");
+                            "Độc Quyền Bởi Nro HOCK\n"
+                            + "Độc Quyền Bởi Nro HOCK\n"
+                            + "Độc Quyền Bởi Nro HOCK");
                     break;
                  //---------------------------   
                   case ConstTask.TASK_25_0:
@@ -1059,9 +1059,9 @@ public class TaskService {
                     break;
                 case ConstTask.TASK_25_5:
                    npcSay(player, ConstNpc.BUNMA_TL,
-                            "Độc Quyền Bởi Nro TaBi\n"
-                            + "Độc Quyền Bởi Nro TaBi\n"
-                            + "Độc Quyền Bởi Nro TaBi");
+                            "Độc Quyền Bởi Nro HOCK\n"
+                            + "Độc Quyền Bởi Nro HOCK\n"
+                            + "Độc Quyền Bởi Nro HOCK");
                     break;
                     //-----------------
                  case ConstTask.TASK_26_0:
@@ -1074,9 +1074,9 @@ public class TaskService {
                     break;
                 case ConstTask.TASK_26_4:
                    npcSay(player, ConstNpc.BUNMA_TL,
-                            "Độc Quyền Bởi Nro TaBi\n"
-                            + "Độc Quyền Bởi Nro TaBi\n"
-                            + "Độc Quyền Bởi Nro TaBi");
+                            "Độc Quyền Bởi Nro HOCK\n"
+                            + "Độc Quyền Bởi Nro HOCK\n"
+                            + "Độc Quyền Bởi Nro HOCK");
                     break; 
                     //---------------------------------
                 case ConstTask.TASK_27_0:
@@ -1089,9 +1089,9 @@ public class TaskService {
                     break;
                 case ConstTask.TASK_27_4:
                    npcSay(player, ConstNpc.BUNMA_TL,
-                            "Độc Quyền Bởi Nro TaBi\n"
-                            + "Độc Quyền Bởi Nro TaBi\n"
-                            + "Độc Quyền Bởi Nro TaBi");
+                            "Độc Quyền Bởi Nro HOCK\n"
+                            + "Độc Quyền Bởi Nro HOCK\n"
+                            + "Độc Quyền Bởi Nro HOCK");
                     break;
                     //----
                      case ConstTask.TASK_28_0:
@@ -1106,9 +1106,9 @@ public class TaskService {
                      break;
                 case ConstTask.TASK_28_5:
                    npcSay(player, ConstNpc.BUNMA_TL,
-                            "Độc Quyền Bởi Nro TaBi\n"
-                            + "Độc Quyền Bởi Nro TaBi\n"
-                            + "Độc Quyền Bởi Nro TaBi");
+                            "Độc Quyền Bởi Nro HOCK\n"
+                            + "Độc Quyền Bởi Nro HOCK\n"
+                            + "Độc Quyền Bởi Nro HOCK");
                     break;
               //-------------------------------
                 case ConstTask.TASK_29_0:
@@ -1121,9 +1121,9 @@ public class TaskService {
                     break;
                 case ConstTask.TASK_29_4:
                    npcSay(player, ConstNpc.BUNMA_TL,
-                             "Độc Quyền Bởi Nro TaBi\n"
-                            + "Độc Quyền Bởi Nro TaBi\n"
-                            + "Độc Quyền Bởi Nro TaBi");
+                             "Độc Quyền Bởi Nro HOCK\n"
+                            + "Độc Quyền Bởi Nro HOCK\n"
+                            + "Độc Quyền Bởi Nro HOCK");
                     break;    
                  case ConstTask.TASK_30_0:
                     break;
@@ -1137,9 +1137,9 @@ public class TaskService {
                     break;
                 case ConstTask.TASK_30_5:
                    npcSay(player, ConstNpc.BUNMA_TL,
-                            "Độc Quyền Bởi Nro TaBi\n"
-                            + "Độc Quyền Bởi Nro TaBi\n"
-                            + "Độc Quyền Bởi Nro TaBi");
+                            "Độc Quyền Bởi Nro HOCK\n"
+                            + "Độc Quyền Bởi Nro HOCK\n"
+                            + "Độc Quyền Bởi Nro HOCK");
                     break;  
                 //-----------------
                   case ConstTask.TASK_31_0:
@@ -1152,9 +1152,9 @@ public class TaskService {
                     break;
                 case ConstTask.TASK_31_4:
                    npcSay(player, ConstNpc.BUNMA_TL,
-                            "Độc Quyền Bởi Nro TaBi\n"
-                            + "Độc Quyền Bởi Nro TaBi\n"
-                            + "Độc Quyền Bởi Nro TaBi");
+                            "Độc Quyền Bởi Nro HOCK\n"
+                            + "Độc Quyền Bởi Nro HOCK\n"
+                            + "Độc Quyền Bởi Nro HOCK");
                     break;      
             }
             InventoryServiceNew.gI().sendItemBags(player);

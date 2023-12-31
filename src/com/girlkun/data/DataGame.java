@@ -175,7 +175,7 @@ public class DataGame {
                     msg.writer().writeByte(skillTemp.type);
                     msg.writer().writeShort(skillTemp.iconId);
                     msg.writer().writeUTF(skillTemp.damInfo);
-                    msg.writer().writeUTF("Tabi");
+                    msg.writer().writeUTF("HOCK");
                     if (skillTemp.id != 0) {
                         msg.writer().writeByte(skillTemp.skillss.size());
                         for (Skill skill : skillTemp.skillss) {

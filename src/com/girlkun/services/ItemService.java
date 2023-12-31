@@ -962,7 +962,7 @@ public class ItemService {
         if (bong == itemId) {
             phukien.itemOptions.add(new Item.ItemOption(50, new Random().nextInt(6) + 5)); // sd 5- 10%
         }
-        phukien.itemOptions.add(new Item.ItemOption(192, 1));//solomon
+        phukien.itemOptions.add(new Item.ItemOption(192, 1));//HOCK
         phukien.itemOptions.add(new Item.ItemOption(193, 1));//(2 món kích hoạt ....)
         if (Util.isTrue(99, 100)) {// tỉ lệ ra hsd
             phukien.itemOptions.add(new Item.ItemOption(93, new Random().nextInt(2) + 1));//hsd
@@ -976,7 +976,7 @@ public class ItemService {
         caitrang.itemOptions.add(new Item.ItemOption(77, 30));// hp 30%
         caitrang.itemOptions.add(new Item.ItemOption(103, 15));// ki 15%
         caitrang.itemOptions.add(new Item.ItemOption(50, 20));// sd 20%
-        caitrang.itemOptions.add(new Item.ItemOption(192, 1));//solomon
+        caitrang.itemOptions.add(new Item.ItemOption(192, 1));//HOCK
         caitrang.itemOptions.add(new Item.ItemOption(193, 1));//(2 món kích hoạt ....)
         if (Util.isTrue(99, 100) && rating) {// tỉ lệ ra hsd
             caitrang.itemOptions.add(new Item.ItemOption(93, new Random().nextInt(2) + 1));//hsd
