@@ -1472,6 +1472,7 @@ public class UseItem {
         } else {
             if (pl.fusion.typeFusion == ConstPlayer.NON_FUSION) {
                 pl.pet.fusion2(true);
+                
             } else {
                 pl.pet.unFusion();
             }

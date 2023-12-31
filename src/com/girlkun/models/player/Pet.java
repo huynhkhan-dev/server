@@ -119,6 +119,7 @@ public class Pet extends Player {
             if (porata) {
                 master.fusion.typeFusion = ConstPlayer.HOP_THE_PORATA2;
             }
+            
             this.status = FUSION;
             ChangeMapService.gI().exitMap(this);
             fusionEffect(master.fusion.typeFusion);
