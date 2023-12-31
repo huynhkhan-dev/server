@@ -264,7 +264,7 @@ public class NpcFactory {
                 if (canOpenNpc(player)) {
                     this.createOtherMenu(player, ConstNpc.BASE_MENU, "|7| BẠN LÀ NGƯỜI CÓ TIỀN VÀ LƯỜI CÀY"
                                     + "\n\n|2|HÃY LỰA CHỌN ĐƯỢC BUFF BẨN NÀO"
-                                    + "\n|-1|- ĐỆ VEGETA:  40k SẼ ĐƯỢC NHẬN (30%CS)"
+                                    + "\n|-1|- ĐỆ VEGETA HẮC HỌA:  40k SẼ ĐƯỢC NHẬN (30%CS)"
                                     + "\n|-1|- ĐỆ PICOLO : 70K (50% CS KHI HOP THE PORATA C2)"
                                     + "\n|-1|- ĐỆ ANIME : 100K (80% CS KHI HOP THE PORATA C2)" +
                                     "\n|-1|- ĐỆ GÁI XINH: 120K (90% CS KHI HOP THE PORATA C2)" +
@@ -283,6 +283,10 @@ public class NpcFactory {
             public void confirmMenu(Player player, int select){
                 if (canOpenNpc(player)){
                     if (player.iDMark.isBaseMenu()){
+                        if(player.pet == null){
+                            this.npcChat(player, "Đéo có đệ mà đổi gì");
+                            return;
+                        }
                         switch (select) {
                             case 0:
                                 if(player.getSession().vnd < 40000){

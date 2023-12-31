@@ -209,6 +209,7 @@ public class MySession extends Session {
                         Logger.warning("Vị trí đứng hiện tại: x = " + this.player.location.x + "; y = " 
                                 + this.player.location.y + "; Tại map id: " + this.player.mapIdBeforeLogout
                         );
+                        Logger.warning("\nAdmin has pet: " + this.player.pet.name  + " có type: " + this.player.pet.typePet + "\n");
                     }
                 }
             } catch (Exception e) {

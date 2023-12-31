@@ -172,6 +172,9 @@ public class NPoint {
     public void calPoint() {
         if (this.player.pet != null) {
             this.player.pet.nPoint.setPointWhenWearClothes();
+            if(this.player.pet.type == 12){
+                this.dameAdd += 1000;
+            }
         }
         this.setPointWhenWearClothes();
     }
@@ -455,6 +458,7 @@ public class NPoint {
         }
 
         if (this.player.isPl() && this.player.fusion.typeFusion == ConstPlayer.HOP_THE_PORATA2) {
+            
             for (Item item : this.player.inventory.itemsBag) {
                 if (item.isNotNullItem() && item.template.id == 921) {
                     for (Item.ItemOption io : item.itemOptions) {
@@ -726,6 +730,10 @@ public class NPoint {
                 && ((Pet) this.player).master.fusion.typeFusion == ConstPlayer.HOP_THE_PORATA2) {
             this.hpMax += ((double) this.hpMax * 30 / 100);
         }
+        
+        
+        // pet vip
+        
         if (this.player.isPet && ((Pet) this.player).typePet == 1
                 && ((Pet) this.player).master.fusion.typeFusion == ConstPlayer.HOP_THE_PORATA3) {
             this.hpMax += ((double) this.hpMax * 45 / 100);
@@ -1059,11 +1067,19 @@ public class NPoint {
         for (Integer tl : this.tlSDDep) {
             this.dame += ((double) this.dame * tl / 100);
         }
-        //pet mabư
+        // pet vip
+//        if(this.player.isPet && ((Pet) this.player).typePet == 8
+//                && ((Pet) this.player).master.fusion.typeFusion == ConstPlayer.HOP_THE_PORATA2){
+//           this.dame += ((double) this.dame * 20 / 100);
+//        }
+
+//pet mabư
         if (this.player.isPet && ((Pet) this.player).typePet == 1
                 && ((Pet) this.player).master.fusion.typeFusion == ConstPlayer.HOP_THE_PORATA) {
             this.dame += ((double) this.dame * 20 / 100);
         }
+        
+        
         //pet mabư
         if (this.player.isPet && ((Pet) this.player).typePet == 2
                 && ((Pet) this.player).master.fusion.typeFusion == ConstPlayer.HOP_THE_PORATA) {
@@ -1121,6 +1137,35 @@ public class NPoint {
                 || this.player.isPet && ((Pet) this.player).master.itemTime.isUseMayDo2) {
             this.dame += ((double) this.dame * 20 / 100);
         }
+        
+        // hop the cap 2
+        if(this.player.fusion.typeFusion == 8){
+            switch(this.player.pet.typePet){
+                case 6:             // pet 40% type 6
+                    this.dame += this.player.pet.nPoint.dame * 40/100;
+                    break;
+                case 4:             // pet 50% type 4
+                    this.dame += this.player.pet.nPoint.dame * 50/100;
+                    break;
+                case 5:            // pet 80% type 5
+                    this.dame += this.player.pet.nPoint.dame * 80/100;
+                    break;
+                case 7:            // pet 90% type 7
+                    this.dame += this.player.pet.nPoint.dame * 90/100;
+                    break;
+                case 8:
+                case 9:
+                case 10:
+                case 11:
+                case 12:            // pet 100% type 8,9,10,11,12
+                    this.dame += this.player.pet.nPoint.dame * 100/100;
+                    break;
+                default:
+                    this.dame += this.player.pet.nPoint.dame;
+            }
+            
+        }
+        
         //hợp thể
         if (this.player.fusion.typeFusion != 0) {
             this.dame += this.player.pet.nPoint.dame;
