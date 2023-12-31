@@ -80,7 +80,7 @@ public class ServerManager {
         long delay = 500;
         delaylogin = System.currentTimeMillis();
         isRunning = true;
-        JFrame frame = new JFrame("Ngọc rồng Tabi");
+        JFrame frame = new JFrame("Ngọc rồng HOCK");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         ImageIcon icon = new ImageIcon("C:\\Users\\vt220\\Desktop\\CBRO Potara\\data\\girlkun\\icon\\icon.png");
         frame.setIconImage(icon.getImage());
@@ -234,7 +234,7 @@ public class ServerManager {
                 if (line.equals("baotri")) {
                     Maintenance.gI().start(60 * 2);
                 } else if (line.equals("athread")) {
-                    ServerNotify.gI().notify("Tabi debug server: " + Thread.activeCount());
+                    ServerNotify.gI().notify("HOCK debug server: " + Thread.activeCount());
                 } else if (line.equals("nplayer")) {
                     Logger.error("Player in game: " + Client.gI().getPlayers().size() + "\n");
                 } else if (line.equals("admin")) {

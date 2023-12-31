@@ -130,7 +130,7 @@ public class panel extends JPanel implements ActionListener {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
-                JFrame frame = new JFrame("Ngọc rồng Tabi");
+                JFrame frame = new JFrame("Ngọc rồng HOCK");
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
                 Panel panel = new Panel();

@@ -44,7 +44,7 @@ public class ServerNotify extends Thread {
                     sendThongBaoBenDuoi(notifies.remove(0));
                 }
                 if (Util.canDoWithTime(this.lastTimeGK, 12000)) {
-                    sendThongBaoBenDuoi("Chào mừng đến với Ngọc rồng Tabi!");
+                    sendThongBaoBenDuoi("Chào mừng đến với Ngọc rồng HOCK!");
                     this.lastTimeGK = System.currentTimeMillis();
                 }
             } catch (Exception ignored) {
@@ -99,7 +99,7 @@ public class ServerNotify extends Thread {
             msg.writer().writeByte(10);
             
             msg.writer().writeShort(0);
-            msg.writer().writeUTF("Thông tin Nro Tabi");
+            msg.writer().writeUTF("Thông tin Nro HOCK");
             msg.writer().writeUTF("  Hồng ngọc săn Boss rơi đá đổi capsule hồng"
                     + "\n  Vàng làm nhiệm vụ hằng ngày"
                     + "\n  Set kích hoạt up map sau làng"

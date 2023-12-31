@@ -819,7 +819,7 @@ public class Input {
     }
 
     public void createFormGiftCode(Player pl) {
-        createForm(pl, GIFT_CODE, "Giftcode Ngọc rồng TaBi", new SubInput("Gift-code", ANY));
+        createForm(pl, GIFT_CODE, "Giftcode Ngọc rồng HOCK", new SubInput("Gift-code", ANY));
     }
 
     public void createFormNextTask(Player p){

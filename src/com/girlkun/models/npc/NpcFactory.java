@@ -483,7 +483,7 @@ public class NpcFactory {
                         switch (select) {
                             case 0: {
                                 this.createOtherMenu(player, 1234,
-                                        "|7|SỰ KIỆN TRUNG THU NRO TABI"
+                                        "|7|SỰ KIỆN TRUNG THU NRO HOCK"
                                         + "\n\n|2|Cách thức tìm nguyên liệu nấu bánh Trung thu"
                                         + "\n|4|- Hạt sen : Đánh các quái bay trên không"
                                         + "\n- Đậu xanh : Đánh các quái dưới đất"
@@ -500,7 +500,7 @@ public class NpcFactory {
                             }
                             case 1: {
                                 this.createOtherMenu(player, 1111,
-                                        "|7|SỰ KIỆN TRUNG THU TABI"
+                                        "|7|SỰ KIỆN TRUNG THU HOCK"
                                         + "\n\n|2|Bạn muốn làm bánh gì?",
                                         "Bánh\nHạt sen", "Bánh\nĐậu xanh", "Bánh\nThập cẩm");
                                 break;

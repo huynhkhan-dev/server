@@ -254,7 +254,7 @@ public class ShopServiceNew {
             msg.writer().writeByte(items.size());
             for (Item item : items) {
                 msg.writer().writeShort(item.template.id);
-                msg.writer().writeUTF("\n|7|Chào mừng đến với Ngọc rồng Tabi");
+                msg.writer().writeUTF("\n|7|Chào mừng đến với Ngọc rồng HOCK");
                 msg.writer().writeByte(item.itemOptions.size() + 1);
                 for (Item.ItemOption io : item.itemOptions) {
                     msg.writer().writeByte(io.optionTemplate.id);
@@ -579,7 +579,7 @@ public class ShopServiceNew {
         if (item != null && item.isNotNullItem() && item.template.id == 457) {
             NpcService.gI().createMenuConMeo(pl, ConstNpc.BAN_NHIEU_THOI_VANG, 7710,
                     "|7|BÁN NHIỀU THỎI VÀNG\n"
-                    + "|-1|Theo nguyện vọng góp ý từ các chiến binh, ta được Admin Ngọc Rồng Tabi\n"
+                    + "|-1|Theo nguyện vọng góp ý từ các chiến binh, ta được Admin Ngọc Rồng HOCK\n"
                     + "giao cho trọng trách hỗ trợ Bán thỏi vàng số lượng nhiều\n"
                     + "|0|Ngươi muốn bán số lượng bao nhiêu Thỏi vàng?",
                     "Bán X1\nThỏi vàng\n(500 Triệu)", "Bán X5\nThỏi vàng\n(2 Tỷ 5)", "Bán X10\nThỏi vàng\n(5 Tỷ)",

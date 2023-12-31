@@ -700,7 +700,7 @@ public class NPoint {
         if (this.player.setClothes.tinhan == 5) {
             this.hpMax += ((double) this.hpMax * 30 / 100);
         }
-        //set solomon
+        //set HOCK
         if (this.player.setClothes.tabi >= 2) {
             this.hpMax += ((double) this.hpMax * 10 / 100);
         }
@@ -1225,7 +1225,7 @@ public class NPoint {
         if (this.player.rewardBlackBall.timeOutOfDateReward[0] > System.currentTimeMillis()) {
             this.dame += ((double) this.dame * RewardBlackBall.R1S_2 / 100);
         }
-        //set solomon
+        //set HOCK
         if (this.player.setClothes.tabi >= 2) {
             this.dame += ((double) this.dame * 10 / 100);
             this.tlDameCrit.add(20);
