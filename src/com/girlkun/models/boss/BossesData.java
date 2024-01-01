@@ -1280,7 +1280,7 @@ public class BossesData {
             new int[]{155}, //map join
             new int[][]{
 //                {Skill.THAI_DUONG_HA_SAN, 7, 100000},
-                {Skill.DICH_CHUYEN_TUC_THOI, 7, 50000},
+                
                 {Skill.KAMEJOKO, 7, 10000},
                 {Skill.LIEN_HOAN, 7, 1000}},
             new String[]{"|-1|Ta bị sao thế này !",

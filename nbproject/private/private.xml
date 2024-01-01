@@ -4,13 +4,28 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/huynh/Downloads/VIP/NRO%20TABI/src/com/girlkun/server/io/MySession.java</file>
-            <file>file:/C:/Users/huynh/Downloads/VIP/NRO%20TABI/src/com/girlkun/services/Service.java</file>
-            <file>file:/C:/Users/huynh/Downloads/VIP/NRO%20TABI/src/com/girlkun/services/func/CombineServiceNew.java</file>
+            <file>file:/C:/Users/huynh/Downloads/VIP/NRO%20TABI/src/com/girlkun/models/player/SetClothes.java</file>
+            <file>file:/C:/Users/huynh/Downloads/VIP/NRO%20TABI/src/com/girlkun/services/ItemService.java</file>
+            <file>file:/C:/Users/huynh/Downloads/VIP/NRO%20TABI/src/com/girlkun/services/PetService.java</file>
             <file>file:/C:/Users/huynh/Downloads/VIP/NRO%20TABI/data/girlkun/girlkun.properties</file>
-            <file>file:/C:/Users/huynh/Downloads/VIP/NRO%20TABI/src/com/girlkun/services/func/CombineNew.java</file>
-            <file>file:/C:/Users/huynh/Downloads/VIP/NRO%20TABI/src/com/girlkun/models/npc/NpcFactory.java</file>
+            <file>file:/C:/Users/huynh/Downloads/VIP/NRO%20TABI/src/com/girlkun/server/ServerNotify.java</file>
+            <file>file:/C:/Users/huynh/Downloads/VIP/NRO%20TABI/src/com/girlkun/models/player/Referee1.java</file>
             <file>file:/C:/Users/huynh/Downloads/VIP/NRO%20TABI/src/com/girlkun/consts/ConstNpc.java</file>
+            <file>file:/C:/Users/huynh/Downloads/VIP/NRO%20TABI/src/com/girlkun/consts/ConstPlayer.java</file>
+            <file>file:/C:/Users/huynh/Downloads/VIP/NRO%20TABI/src/com/girlkun/models/player/Pet.java</file>
+            <file>file:/C:/Users/huynh/Downloads/VIP/NRO%20TABI/src/com/girlkun/models/map/Zone.java</file>
             <file>file:/C:/Users/huynh/Downloads/VIP/NRO%20TABI/src/com/girlkun/models/player/Player.java</file>
+            <file>file:/C:/Users/huynh/Downloads/VIP/NRO%20TABI/src/com/girlkun/services/func/Input.java</file>
+            <file>file:/C:/Users/huynh/Downloads/VIP/NRO%20TABI/src/com/girlkun/services/Service.java</file>
+            <file>file:/C:/Users/huynh/Downloads/VIP/NRO%20TABI/src/com/girlkun/models/player/NPoint.java</file>
+            <file>file:/C:/Users/huynh/Downloads/VIP/NRO%20TABI/src/com/girlkun/server/ServerManager.java</file>
+            <file>file:/C:/Users/huynh/Downloads/VIP/NRO%20TABI/src/com/girlkun/services/func/UseItem.java</file>
+            <file>file:/C:/Users/huynh/Downloads/VIP/NRO%20TABI/src/com/girlkun/data/DataGame.java</file>
+            <file>file:/C:/Users/huynh/Downloads/VIP/NRO%20TABI/src/com/girlkun/server/Controller.java</file>
+            <file>file:/C:/Users/huynh/Downloads/VIP/NRO%20TABI/src/com/girlkun/models/npc/NpcFactory.java</file>
+            <file>file:/C:/Users/huynh/Downloads/VIP/NRO%20TABI/src/com/girlkun/models/shop/ShopServiceNew.java</file>
+            <file>file:/C:/Users/huynh/Downloads/VIP/NRO%20TABI/src/com/girlkun/server/panel.java</file>
+            <file>file:/C:/Users/huynh/Downloads/VIP/NRO%20TABI/src/com/girlkun/services/TaskService.java</file>
         </group>
     </open-files>
 </project-private>
