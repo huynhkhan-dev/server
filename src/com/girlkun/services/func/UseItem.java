@@ -244,6 +244,7 @@ public class UseItem {
                     InventoryServiceNew.gI().itemBagToBody(pl, indexBag);
                     Service.gI().sendFoot(pl, item.template.id);
                     break;
+                    
                 case 75:
                     InventoryServiceNew.gI().itemBagToBody(pl, indexBag);
                     Service.getInstance().sendchienlinh(pl, (short) (item.template.iconID - 1));
@@ -477,6 +478,24 @@ public class UseItem {
                             break;
                         case 380: //cskb
                             openCSKB(pl, item);
+                            break;
+                        case 1356:// doi skill de tu
+                            if (pl.pet != null) {
+                                if (pl.pet.playerSkill.skills.get(1).skillId != -1) {
+                                    pl.pet.openSkill2();
+                                    pl.pet.openSkill3();
+                                    Service.getInstance().chatJustForMe(pl, pl.pet, "Cảm ơn sư phụ");
+                                    InventoryServiceNew.gI().subQuantityItemsBag(pl, item, 1);
+                                    InventoryServiceNew.gI().sendItemBags(pl);
+                                } else {
+                                    Service.getInstance().sendThongBao(pl, "Ít nhất đệ tử ngươi phải có chiêu 2 chứ!");
+                                    return;
+                                }
+                            } else {
+                                Service.getInstance().sendThongBao(pl, "Ngươi làm gì có đệ tử?");
+                                return;
+                            }
+                       
                             break;
                         case 1296: //cskb
                             maydoboss(pl);

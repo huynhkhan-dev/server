@@ -76,6 +76,8 @@ import static com.girlkun.services.func.GoiRongXuong.HALLOWEN_SAY;
 import com.girlkun.services.func.TaiXiu;
 import com.girlkun.utils.SkillUtil;
 import java.util.Random;
+import java.util.Timer;
+import java.util.TimerTask;
 //import static com.girlkun.utils.SkillUtil.getSkillbyId;
 //import java.util.Timer;
 //import java.util.TimerTask;
@@ -3181,23 +3183,23 @@ public static Npc Potage(int mapId, int status, int cx, int cy, int tempId, int 
 
     public static Npc minuong(int mapId, int status, int cx, int cy, int tempId, int avartar) {
         return new Npc(mapId, status, cx, cy, tempId, avartar) {
-//            public void Npcchat(Player player) {
-//                String[] chat = {
-//                    "Giúp Ta đẫn Bé Quỳnh Về Nha",
-//                    "Em buông tay anh vì lí do gì ",
-//                    "Người hãy nói đi , đừng Bắt Anh phải nghĩ suy"
-//                };
-//                Timer timer = new Timer();
-//                timer.scheduleAtFixedRate(new TimerTask() {
-//                    int index = 0;
-//
-//                    @Override
-//                    public void run() {
-//                        npcChat(player, chat[index]);
-//                        index = (index + 1) % chat.length;
-//                    }
-//                }, 6000, 6000);
-//            }
+            public void Npcchat(Player player) {
+                String[] chat = {
+                    "Giúp Ta đẫn Bé Quỳnh Về Nha",
+                    "Em buông tay anh vì lí do gì ",
+                    "Người hãy nói đi , đừng Bắt Anh phải nghĩ suy"
+                };
+                Timer timer = new Timer();
+                timer.scheduleAtFixedRate(new TimerTask() {
+                    int index = 0;
+
+                    @Override
+                    public void run() {
+                        npcChat(player, chat[index]);
+                        index = (index + 1) % chat.length;
+                    }
+                }, 6000, 6000);
+            }
 
             @Override
             public void openBaseMenu(Player player) {
@@ -3214,7 +3216,7 @@ public static Npc Potage(int mapId, int status, int cx, int cy, int tempId, int 
             public void confirmMenu(Player player, int select) {
 //                Npcchat(player);
                 if (canOpenNpc(player)) {
-                    if (this.mapId == 42) {
+                    if (this.mapId == 0) {
                         if (player.iDMark.isBaseMenu()) {
                             switch (select) {
                                 case 0:
